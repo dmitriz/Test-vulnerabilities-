@@ -1,0 +1,10 @@
+<html>
+<body>
+    <h1>Hello World</h1>
+    <p id="greeting"></p>
+    <script>
+        const userInput = location.hash.substring(1); // User input from URL
+        document.getElementById("greeting").innerHTML = userInput; // Vulnerable line
+    </script>
+</body>
+</html>
